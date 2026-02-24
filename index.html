@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Reed Evans | CV</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width">
+    <meta property="og:title" content="Reed Evans | CV" />
+    <meta property="og:site_name" content="Reed Evans | CV" />
+    <meta property="og:description" content="NLP, Machine Learning, Cloud Infrastructure, Distributed Systems" />
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <div class="header-container">
+        <header class="wrapper clearfix">
+            <div class="aside-container">
+                <aside>
+                    <p>
+                        <a href="http://reedevans.com" target="_blank">
+                            reedevans.com
+                        </a>
+                    </p>
+                    <p>
+                        <a href="http://github.com/reed-evans" target="_blank">
+                            github.com/reed-evans
+                        </a>
+                    </p>
+                    <p>
+                        <a class="plain phone-obfuscated" href="javascript:void(0)">
+                            <span class="hover-text">[ hover for phone ]</span>
+                            <span class="tap-text">[ tap for phone ]</span>
+                        </a>
+                    </p>
+                    <p>
+                        <a class="plain print-alt-link email-obfuscated" href="javascript:void(0)">
+                            <span class="hover-text">[ hover for email ]</span>
+                            <span class="tap-text">[ tap for email ]</span>
+                        </a>
+                    </p>
+                </aside>
+            </div>
+            <h1 class="title">Reed Evans</h1>
+            <p class="subtitle"> Distributed Systems &amp; Cloud Infrastructure</p>
+        </header>
+    </div>
+    <div class="main-container">
+        <div class="main wrapper clearfix">
+            <div class="right-container">
+                <div id="education">
+                    <div>
+                        <h2>Education</h2>
+                    </div>
+                    <section class="list">
+                        <section>
+                            <h3>
+                                <a href="http://www.columbia.edu" target="_blank">Columbia University</a>
+                            </h3>
+                            <div>
+                                <p>M.S. Computer Science, NLP</p>
+                                <time> Expected 2027</time>
+                            </div>
+                            <h3>
+                                <a href="http://www.bucknell.edu" target="_blank">Bucknell University</a>
+                            </h3>
+                            <div>
+                                <p>B.S. Computer Engineering, B.A. Music</p>
+                                <time>Jan 2020</time>
+                            </div>
+                        </section>
+                    </section>
+                </div>
+                <div id="skills">
+                    <div>
+                        <h2>Skills</h2>
+                    </div>
+                    <section class="list">
+                        <section>
+                            <div style="display: inline-block;">
+                                <h3>Languages</h3>
+                                <p>Python • Rust<br>Go • Kotlin</p>
+                            </div>
+                            <div style="display: inline-block; margin-left: 4em;">
+                                <h3> Tools </h3>
+                                <p>PyTorch • AWS • GCP<br>Docker</p>
+                            </div>
+                        </section>
+                    </section>
+                </div>
+                <div id="experience">
+                    <div>
+                        <h2>Experience</h2>
+                    </div>
+                    <section class="list">
+                        <section>
+                            <h3><a href="https://www.linkedin.com/company/amazon-fulfillment-technologies-robotics/"
+                                    target="_blank">Amazon Robotics</a></h3>
+                            <p style="margin-bottom: 0"><i>Software Engineer I</i><span style="float: right">Feb 2020
+                                    &#8211; Jun 2022</span></p>
+                            <p><i>Software Engineer II</i><span style="float: right">Jun 2022 &#8211; Feb 2025</span>
+                            </p>
+                            <p>
+                                Warehouse Simulation Team &#8211; Building virtual warehouses with emulated hardware,
+                                mock inventory databases, and production software for testing, validation, and
+                                optimization of software and floor maps
+                            </p>
+                            <p>Automated Storage Floor</p>
+                            <ul class="indent">
+                                <li>Led end-to-end design and implementation of the simulation solution supervising two
+                                    engineers and working with 5+ teams. Caught over 70 production software issues
+                                    including 12 sev1/sev2 issues before initial go-live</li>
+                                <li>Developed emulated stations, integrated with an existing robotic arm emulator, setup
+                                    simulation initialization</li>
+                            </ul>
+                            <p></p>
+                            <p>Web UI Migration</p>
+                            <ul class="indent">
+                                <li>Conceived and led an intern project to explore the use of a new company simulation
+                                    management platform, with potential to migrate off the team-owned website launcher
+                                    and reduce team workload by about 10%</li>
+                                <li>Mentored the intern to deliver a narrow-scope proof of concept</li>
+                                <li>Extended the project to a scalable interim solution while designing long-term
+                                    architecture</li>
+                            </ul>
+                            <p></p>
+                            <p>Inter-Floor Elevator</p>
+                            <ul class="indent">
+                                <li>Created a new modular elevator emulator to move containers between floors of a
+                                    warehouse, supporting two distinct use cases and handling over 2,000 containers per
+                                    hour. Used by an additional QA team</li>
+                            </ul>
+                            <p></p>
+                            <p>Outbound Unstructured Floor</p>
+                            <ul class="indent">
+                                <li>Developed a flexible workflow driver to manage all carts on the floor, supporting
+                                    three operating modes with robust logic for cart handling failures and cleanup.
+                                    Parallelized cart registration with green threads bringing it from several minutes
+                                    to about 10 seconds on a single thread</li>
+                                <li>Implemented dynamic chute allocation in our simulations for optimizing package
+                                    routing. Increased fidelity of our simulations compared to production by about 3%
+                                </li>
+                            </ul>
+                            <p></p>
+                            <p>Last Mile Logistics Floor</p>
+                            <ul class="indent">
+                                <li>Developed emulated stations and order generators for mock inventory database</li>
+                                <li>Wrote a polynomial evaluator in ANTLR supporting keyword variables to be evaluated
+                                    with simulation state values at runtime, used for computing dynamic delay times in
+                                    emulated station workflows</li>
+                            </ul>
+                            <p></p>
+                            <p>Platform Infrastructure Improvements</p>
+                            <ul class="indent">
+                                <li>Initiated and led org's migration to Kotlin. Trained other engineers on language
+                                    features and design practices for improved null-safety, language-level concurrency,
+                                    and maintainability</li>
+                            </ul>
+                        </section>
+                    </section>
+                </div>
+            </div>
+            <div class="updated-date" id="updated-date"></div>
+            <script>
+                const d = new Date();
+                const month = d.toLocaleString('en-US', { month: 'short' });
+                document.getElementById('updated-date').textContent = `Updated ${month} ${d.getFullYear()}`;
+            </script>
+        </div>
+    </div>
+    <script src="./encrypt_info.js"></script>
+    <script src="./default_filename_on_save.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@font-face {
+    font-family: "FraktionSans";
+    src: url("fonts/PPFraktionSans/PPFraktionSans-Medium.woff2");
+    font-weight: 300 400;
+}
+
+@font-face {
+    font-family: "FraktionSans";
+    src: url("fonts/PPFraktionSans/PPFraktionSans-Bold.woff2");
+    font-weight: 500 600;
+}
+
+@font-face {
+    font-family: "FraktionSans";
+    src: url("fonts/PPFraktionSans/PPFraktionSans-Black.woff2");
+    font-weight: 700 900;
+}
+
+@font-face {
+    font-family: "NeueYork";
+    src: url("fonts/PPNeueYork-Normal/PPNeueYork-NormalBold.woff2");
+    font-weight: 500 900;
+}
+
+
+/* Base */
+
+html {
+    font-size: 13px;
+    /* Use #f4f6f8 for cooler background */
+    background: #f8f6f4;
+    color: #000;
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    line-height: 1.4;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "FraktionSans", 'Open Sans', sans-serif;
+    font-size: 0.846rem;
+    background-image: url("images/color-flare.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    min-height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3 {
+    font-family: "FraktionSans", sans-serif;
+    font-weight: 700;
+}
+
+/* h1,
+h2 {
+    letter-spacing: .5px;
+} */
+
+h3 a {
+    color: black;
+}
+
+/* Links */
+
+a {
+    color: #A88B72;
+    text-decoration: none;
+}
+
+a:active,
+a:focus,
+a:hover,
+a:visited:hover {
+    outline: 0;
+    color: #A88B72;
+}
+
+aside a {
+    font-weight: 600;
+    color: black;
+}
+
+/* Lists */
+
+ul {
+    list-style: none;
+}
+
+ul li::before {
+    content: url("images/bullet.svg");
+    font-size: 0.615rem;
+    display: inline-block;
+    min-width: 2em;
+    margin-left: -1.5em;
+    position: absolute;
+    margin-top: 3px;
+}
+
+.indent {
+    padding: 0;
+    margin: 0 0 0 1em;
+    display: inline-block;
+}
+
+/* Layout */
+
+.header-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.header-container .clearfix {
+    margin-top: 28px;
+    margin-bottom: 40px;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 5%;
+}
+
+.main-container {
+    width: 100%;
+    min-width: 380px;
+    max-width: 960px;
+    margin: 2.5em auto 1em auto;
+}
+
+.main {
+    padding: 0;
+}
+
+.main.wrapper.clearfix {
+    color: #151D29;
+    max-width: 960px;
+    margin: 0 5%;
+}
+
+.main p {
+    font-weight: 400;
+}
+
+/* Header */
+
+.title {
+    font-size: 3.2rem;
+    /* 3rem for NeueYork */
+    font-weight: 900;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    margin: 0 0 1em;
+}
+
+header>.aside-container {
+    margin: 8px auto;
+    text-align: center;
+    float: right;
+}
+
+aside {
+    text-align: right;
+}
+
+aside>p {
+    font-size: 1rem;
+    line-height: 1.4em;
+    margin: 0 auto;
+    display: block;
+}
+
+aside>p>a {
+    display: inline-block;
+}
+
+aside h3 {
+    display: none;
+}
+
+header p {
+    padding: 0;
+}
+
+/* Right Container */
+
+.right-container {
+    width: 100%;
+    float: right;
+    margin: -1.5em 0 0 0;
+}
+
+.right-container>div {
+    clear: both;
+}
+
+.right-container h2 {
+    color: black;
+    background-size: .5em .5em, 100% 100%;
+    /* background-color: #e2e4e9; */
+    background-color: #ebecef;
+    mix-blend-mode: multiply;
+    /* background-image:
+        linear-gradient(rgba(0, 0, 0, 0.00) 50%, transparent 100%),
+        linear-gradient(-183deg, #e2e4e9, rgb(235, 236, 235)); */
+    /* linear-gradient(-183deg, #e1e3e9, rgb(235, 235, 235)); */
+    font-size: 1.4rem;
+    /* 1.3rem for NeueYork */
+    line-height: 1em;
+    padding: .4em 1.85rem;
+    margin: 0;
+}
+
+.right-container .list {
+    margin: 0 0.85rem;
+}
+
+/* List Sections */
+
+.list section {
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.list section h3 {
+    font-size: 1.4rem;
+    /* 1.3rem for NeueYork */
+    font-weight: 700;
+}
+
+.list h3 {
+    float: left;
+    margin-bottom: 0;
+    margin-top: 0.75ex;
+}
+
+.list p {
+    margin-top: 0;
+    margin-bottom: .3em;
+    clear: left;
+}
+
+.list time {
+    float: right;
+    margin-top: 1ex;
+}
+
+/* Education & Skills */
+
+#education,
+#skills {
+    width: 48%;
+    display: inline-block;
+    height: fit-content;
+}
+
+#education,
+#skills,
+#experience,
+#coursework {
+    margin-bottom: 2ex;
+}
+
+#education {
+    float: left;
+    margin-right: 1em;
+}
+
+#education h3 {
+    width: 100%;
+}
+
+#education .list p {
+    display: inline-block;
+}
+
+#education .list time {
+    margin-top: 0;
+}
+
+#skills {
+    float: right;
+    clear: none;
+}
+
+#skills .section {
+    float: left;
+}
+
+#skills .section+.section {
+    margin-left: 4em;
+}
+
+/* Utilities */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.print-only {
+    display: none;
+}
+
+.updated-date {
+    clear: both;
+    font-style: italic;
+    color: #8A8A8A;
+    font-size: 1rem;
+    padding-top: 4ex;
+    mix-blend-mode: luminosity;
+}
+
+.tap-text {
+    display: none;
+}
+
+/* Small screens */
+
+@media only screen and (max-width: 720px) {
+
+    #skills,
+    #education {
+        width: 100%;
+    }
+
+    .title {
+        line-height: 3.5rem;
+    }
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .hover-text {
+        display: none;
+    }
+
+    .tap-text {
+        display: inline;
+    }
+}
+
+/* Print */
+
+@media print {
+    html {
+        -webkit-margin-before: 0em;
+        -webkit-margin-after: 0em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        -webkit-padding-after: 0mm;
+        -webkit-padding-before: 0mm;
+        -webkit-padding-start: 0mm;
+        -webkit-padding-end: 0mm;
+        background-color: #fff;
+        background-image: none;
+    }
+
+    body {
+        height: 11in;
+        overflow: hidden;
+    }
+
+    * {
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    .no-print,
+    .no-print * {
+        display: none !important;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    span.print-only {
+        display: inline;
+    }
+
+    a.print-only {
+        display: inline;
+    }
+
+    a[href].print-only:before {
+        content: "<";
+        color: black;
+    }
+
+    a[href].print-only:after {
+        content: ">";
+        color: black;
+    }
+
+    .main-container {
+        margin: 2.5em auto;
+    }
+
+    .header-container .clearfix {
+        margin-top: 16px;
+    }
+
+    aside {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    aside>p {
+        line-height: 1.2em;
+    }
+
+    header>.aside-container {
+        margin-top: 14px;
+    }
+
+    .subtitle {
+        margin: 0;
+    }
+
+    .main.clearfix {
+        margin-bottom: 0;
+        margin-top: 2mm;
+    }
+
+    .list section {
+        padding-bottom: 0.25em;
+        margin-left: 0;
+        font-size: 1.026rem;
+    }
+
+    .list section h3 {
+        font-size: 1.3rem;
+        /* 1.25rem for NeueYork */
+    }
+
+    ul li::before {
+        font-size: 0.615rem;
+        margin-top: 3px;
+    }
+
+    .indent {
+        margin: 0 0 0 1.1em;
+    }
+
+    .right-container h2 {
+        background-color: #ebecef;
+        margin-bottom: .2em;
+        padding-left: 0.85rem;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        font-size: 1.3rem;
+        /* 1.25rem for NeueYork */
+    }
+
+    .updated-date {
+        padding: 0;
+        float: right;
+        clear: none;
+        position: relative;
+        font-size: 0.8rem;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    #education,
+    #skills {
+        height: fit-content;
+    }
+}
