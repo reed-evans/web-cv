@@ -13,6 +13,41 @@
 </head>
 
 <body>
+    <svg id="bg-gradient" class="no-print" aria-hidden="true"
+        style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;pointer-events:none;">
+        <defs>
+            <radialGradient id="bg-flare" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="1">
+                <!-- A warm amber gradient -->
+                <!-- <stop offset="0%" stop-color="#d9a020" stop-opacity="0.8" />
+                <stop offset="20%" stop-color="#e0a830" stop-opacity="0.6" />
+                <stop offset="45%" stop-color="#e8b850" stop-opacity="0.35" />
+                <stop offset="70%" stop-color="#ecc870" stop-opacity="0.12" />
+                <stop offset="100%" stop-color="#ecc870" stop-opacity="0" /> -->
+                <stop offset="0%" stop-color="#4a8a79" stop-opacity="0.65" />
+                <stop offset="20%" stop-color="#5a8e9a" stop-opacity="0.5" />
+                <stop offset="45%" stop-color="#7aacb4" stop-opacity="0.28" />
+                <stop offset="70%" stop-color="#90bec6" stop-opacity="0.10" />
+                <stop offset="100%" stop-color="#90bec6" stop-opacity="0" />
+            </radialGradient>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#bg-flare)" />
+    </svg>
+    <script>
+        (function () {
+            const gradient = document.getElementById('bg-flare');
+            function updateGradient() {
+                const w = window.innerWidth;
+                const h = window.innerHeight;
+                const rx = w * 0.95;
+                const ry = h * 0.67;
+                const cy = h / 2;
+                gradient.setAttribute('gradientTransform',
+                    `translate(0, ${cy}) scale(${rx}, ${ry})`);
+            }
+            updateGradient();
+            window.addEventListener('resize', updateGradient);
+        })();
+    </script>
     <div class="header-container">
         <header class="wrapper clearfix">
             <div class="aside-container">

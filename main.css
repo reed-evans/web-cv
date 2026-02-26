@@ -29,8 +29,8 @@
 
 html {
     font-size: 13px;
-    /* Use #f4f6f8 for cooler background */
-    background: #f8f6f4;
+    /* Use #f8f6f4 for warmer background */
+    background: #f4f6f8;
     color: #000;
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -48,9 +48,6 @@ html {
 body {
     font-family: "FraktionSans", 'Open Sans', sans-serif;
     font-size: 0.846rem;
-    background-image: url("images/color-flare.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
     overflow: hidden;
     min-height: 100%;
     width: 100%;
@@ -79,7 +76,7 @@ h3 a {
 /* Links */
 
 a {
-    color: #A88B72;
+    color: #2C4A6E;
     text-decoration: none;
 }
 
@@ -88,7 +85,7 @@ a:focus,
 a:hover,
 a:visited:hover {
     outline: 0;
-    color: #A88B72;
+    color: #2C4A6E;
 }
 
 aside a {
@@ -127,7 +124,7 @@ ul li::before {
 
 .header-container .clearfix {
     margin-top: 28px;
-    margin-bottom: 40px;
+    margin-bottom: 2em;
 }
 
 .wrapper {
@@ -139,7 +136,7 @@ ul li::before {
     width: 100%;
     min-width: 380px;
     max-width: 960px;
-    margin: 2.5em auto 1em auto;
+    margin: 2em auto 1em auto;
 }
 
 .main {
@@ -204,7 +201,6 @@ header p {
 .right-container {
     width: 100%;
     float: right;
-    margin: -1.5em 0 0 0;
 }
 
 .right-container>div {
@@ -226,6 +222,7 @@ header p {
     line-height: 1em;
     padding: .4em 1.85rem;
     margin: 0;
+    border-radius: 2px;
 }
 
 .right-container .list {
@@ -410,7 +407,7 @@ header p {
     }
 
     .main-container {
-        margin: 2.5em auto;
+        margin: 2em auto;
     }
 
     .header-container .clearfix {
