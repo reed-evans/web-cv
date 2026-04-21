@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 @font-face {
     font-family: "FraktionSans";
@@ -24,7 +24,6 @@
     font-weight: 500 900;
 }
 
-
 /* Base */
 
 html {
@@ -46,7 +45,7 @@ html {
 }
 
 body {
-    font-family: "FraktionSans", 'Open Sans', sans-serif;
+    font-family: "FraktionSans", "Open Sans", sans-serif;
     font-size: 0.846rem;
     overflow: hidden;
     min-height: 100%;
@@ -166,7 +165,7 @@ ul li::before {
     margin: 0 0 1em;
 }
 
-header>.aside-container {
+header > .aside-container {
     margin: 8px auto;
     text-align: center;
     float: right;
@@ -176,14 +175,14 @@ aside {
     text-align: right;
 }
 
-aside>p {
+aside > p {
     font-size: 1rem;
     line-height: 1.4em;
     margin: 0 auto;
     display: block;
 }
 
-aside>p>a {
+aside > p > a {
     display: inline-block;
 }
 
@@ -202,19 +201,21 @@ header p {
     float: right;
 }
 
-.right-container>div {
+.right-container > div {
     clear: both;
 }
 
 .right-container h2 {
-    background-size: .5em .5em, 100% 100%;
+    background-size:
+        0.5em 0.5em,
+        100% 100%;
     /* background-color: #e3dacc; color: #141413; */
     color: #f0eee6;
     background-color: #273041;
     font-size: 1.4rem;
     /* 1.3rem for NeueYork */
     line-height: 1;
-    padding: .35em 1.85rem .45em;
+    padding: 0.35em 1.85rem 0.45em;
     margin: 0;
     border-radius: 2px;
 }
@@ -244,7 +245,7 @@ header p {
 
 .list p {
     margin-top: 0;
-    margin-bottom: .3em;
+    margin-bottom: 0.3em;
     clear: left;
 }
 
@@ -257,7 +258,6 @@ header p {
 
 #education,
 #skills {
-    width: 48%;
     display: inline-block;
     height: fit-content;
 }
@@ -272,6 +272,7 @@ header p {
 #education {
     float: left;
     margin-right: 1em;
+    width: 44%;
 }
 
 #education h3 {
@@ -289,14 +290,14 @@ header p {
 #skills {
     float: right;
     clear: none;
+    width: 54%;
 }
 
-#skills .section {
-    float: left;
-}
-
-#skills .section+.section {
-    margin-left: 4em;
+#skills .list section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1em;
 }
 
 /* Utilities */
@@ -313,7 +314,7 @@ header p {
 .updated-date {
     clear: both;
     font-style: italic;
-    color: #8A8A8A;
+    color: #8a8a8a;
     font-size: 1rem;
     padding-top: 4ex;
     mix-blend-mode: luminosity;
@@ -326,7 +327,6 @@ header p {
 /* Small screens */
 
 @media only screen and (max-width: 720px) {
-
     #skills,
     #education {
         width: 100%;
@@ -414,11 +414,11 @@ header p {
         print-color-adjust: exact;
     }
 
-    aside>p {
+    aside > p {
         line-height: 1.2em;
     }
 
-    header>.aside-container {
+    header > .aside-container {
         margin-top: 14px;
     }
 
@@ -454,7 +454,7 @@ header p {
         /* #e2e4e9 (slightly darker) */
         background-color: #ebecef;
         color: black;
-        margin-bottom: .2em;
+        margin-bottom: 0.2em;
         padding-left: 0.85rem;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;

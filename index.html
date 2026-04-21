@@ -58,7 +58,7 @@
                 </aside>
             </div>
             <h1 class="title">Reed Evans</h1>
-            <p class="subtitle"> Distributed Systems &amp; Cloud Infrastructure</p>
+            <p class="subtitle">AI Systems &amp; Distributed Infrastructure</p>
         </header>
     </div>
     <div class="main-container">
@@ -74,7 +74,7 @@
                                 <a href="http://www.columbia.edu" target="_blank">Columbia University</a>
                             </h3>
                             <div>
-                                <p>M.S. Computer Science, NLP</p>
+                                <p>M.S. Computer Science &#8211; NLP</p>
                                 <time> Expected 2027</time>
                             </div>
                             <h3>
@@ -93,13 +93,17 @@
                     </div>
                     <section class="list">
                         <section>
-                            <div style="display: inline-block;">
-                                <h3>Languages</h3>
-                                <p>Python • Rust<br>Go • Kotlin</p>
+                            <div class="skill-group">
+                                <h3>AI</h3>
+                                <p>PyTorch • vLLM/SGLang<br>RLMs • Agent Orchestration<br>MCP • Claude</p>
                             </div>
-                            <div style="display: inline-block; margin-left: 4em;">
-                                <h3> Tools </h3>
-                                <p>PyTorch • AWS • GCP<br>Docker</p>
+                            <div class="skill-group">
+                                <h3>Tools</h3>
+                                <p>AWS • GCP<br>Docker</p>
+                            </div>
+                            <div class="skill-group">
+                                <h3>Languages</h3>
+                                <p>Python • Rust<br>Go • Kotlin<br>TypeScript</p>
                             </div>
                         </section>
                     </section>
@@ -110,12 +114,21 @@
                     </div>
                     <section class="list">
                         <section>
+                            <h3>Projects</h3>
+                            <p>Automated Drug Research Pipeline<span style="float: right">Feb 2026
+                                    &#8211; Present</span</p>
+                            <ul class="indent">
+                                <li>Built multi-agent LLM system for therapeutics research with due-diligence report synthesis and pricing guidlines</li>
+                                <li>Setup open source Qwen model with vLLM hosted on EC2 to run system, with Strands SDK for agent orchestration</li>
+                                <li>Wrote a custom TypeScript implementation of <a href="https://arxiv.org/abs/2512.24601">Recursive Language Models</a> for
+                                    steps requiring context beyond model limits, such as long-horizon tasks and consuming/producing large content</li>
+                            </ul>
+                        </section>
+                        <section>
                             <h3><a href="https://www.linkedin.com/company/amazon-fulfillment-technologies-robotics/"
                                     target="_blank">Amazon Robotics</a></h3>
-                            <p style="margin-bottom: 0"><i>Software Engineer I</i><span style="float: right">Feb 2020
-                                    &#8211; Jun 2022</span></p>
-                            <p><i>Software Engineer II</i><span style="float: right">Jun 2022 &#8211; Feb 2025</span>
-                            </p>
+                            <p style="margin-bottom: 0"><i>Software Engineer I, II</i><span style="float: right">Feb 2020
+                                    &#8211; Feb 2025</span></p>
                             <p>
                                 Warehouse Simulation Team &#8211; Building virtual warehouses with emulated hardware,
                                 mock inventory databases, and production software for testing, validation, and
@@ -132,11 +145,10 @@
                             <p></p>
                             <p>Web UI Migration</p>
                             <ul class="indent">
-                                <li>Conceived and led an intern project to explore the use of a new company simulation
+                                <li>Conceived and mentored an intern project to deliver proof-of-concept use of a new internal simulation
                                     management platform, with potential to migrate off the team-owned website launcher
                                     and reduce team workload by about 10%</li>
-                                <li>Mentored the intern to deliver a narrow-scope proof of concept</li>
-                                <li>Extended the project to a scalable interim solution while designing long-term
+                                <li>Extended the project myself to an interim solution while designing long-term
                                     architecture</li>
                             </ul>
                             <p></p>
@@ -151,8 +163,7 @@
                             <ul class="indent">
                                 <li>Developed a flexible workflow driver to manage all carts on the floor, supporting
                                     three operating modes with robust logic for cart handling failures and cleanup.
-                                    Parallelized cart registration with green threads bringing it from several minutes
-                                    to about 10 seconds on a single thread</li>
+                                </li>
                                 <li>Implemented dynamic chute allocation in our simulations for optimizing package
                                     routing. Increased fidelity of our simulations compared to production by about 3%
                                 </li>
