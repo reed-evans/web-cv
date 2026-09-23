@@ -294,7 +294,7 @@ header p {
 }
 
 #skills .list section {
-    display: flex;
+    display: inline-block;
     justify-content: space-between;
     align-items: flex-start;
     gap: 1em;
